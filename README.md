@@ -13,7 +13,7 @@
 
 1. **Install the required libraries**:
     ```bash
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 
 2. **Set environment variables**:
@@ -44,6 +44,9 @@
 }
 ```
 ## test
+
+### export credential key
+    export GOOGLE_APPLICATION_CREDENTIALS=...
 
 ### register 
     curl -X POST http://127.0.0.1:5000/register -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpassword"}'
